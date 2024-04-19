@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:35 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 16:59:18 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/18 14:01:32 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	}
 	return (NULL);
 }
-
 
 /* char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

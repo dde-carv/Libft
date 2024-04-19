@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:13 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 16:33:15 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/18 13:57:16 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 
 	len = 0;
 	lensrc = ft_strlen(src);
-	if  (!dest || !src)
+	if (!dest || !src)
 		return (0);
 	if (size == 0)
 		return (lensrc);

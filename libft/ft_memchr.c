@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:11 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 16:32:27 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/18 13:58:19 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memchr(const void *str, int c, size_t n)
 
 	len = 0;
 	typedef unsigned char a;
-/* 	if (!str)
-		return (NULL); */
 	while (len < n)
 	{
 		if (((a *)str)[len] == (a)c)
