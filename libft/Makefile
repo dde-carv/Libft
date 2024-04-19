@@ -6,7 +6,7 @@
 #    By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 15:04:36 by dde-carv          #+#    #+#              #
-#    Updated: 2024/04/19 14:30:01 by dde-carv         ###   ########.fr        #
+#    Updated: 2024/04/19 17:49:37 by dde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRCS	=	ft_atoi.c \
 		ft_split.c \
 		ft_strchr.c \
 		ft_strdup.c \
+		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
@@ -44,27 +45,28 @@ SRCS	=	ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c   \
-		ft_lstnew.c \
+		ft_toupper.c
+
+SRC_B	=	ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
-		ft_lstdelone.c
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 
-SRC_B	=	ft_lstnew.c \
-		ft_lstadd_front.c \
-		ft_lstsize.c
-
-CC	=	cc
+CC	=	@cc
 CFLAGS	=	-Wall -Werror -Wextra
 OBJS	=	${SRCS:.c=.o}
-OBJS_B	=	${SRCS_B:.c=.o}
+OBJS_B	=	${SRC_B:.c=.o}
 RM	=	@rm -f
 LIBC	=	@ar -rcs
 INCS	=	.
 
 ${NAME}: ${OBJS}
+	@echo "Created .o files."
 	${LIBC} ${NAME} ${OBJS}
 
 all: ${NAME}
@@ -73,10 +75,12 @@ bonus: ${NAME} ${OBJS_B}
 	${LIBC} ${NAME} ${OBJS}
 
 fclean: clean
-	${RM} ${NAME} ${bonus}
+	${RM} ${NAME}
+	@echo "Cleaned libft.a."
 
 clean:
 	${RM} -f ${OBJS} ${OBJS_B}
+	@echo "Cleaned .o files."
 
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
@@ -85,5 +89,4 @@ so:
 re: fclean all
 
 .PHONY: all bonus fclean clean re .c.o
-#ft_striteri\
-#
+

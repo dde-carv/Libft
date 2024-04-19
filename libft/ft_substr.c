@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:00:01 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 17:29:38 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/19 16:09:23 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
