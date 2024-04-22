@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:35 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/18 14:01:32 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:57:03 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
@@ -19,13 +18,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	size_t	lenl;
 
 	lenb = 0;
-	lenl = 0;
-	if (!n)
-		return (NULL);
-	if (!*big || !*little)
+	if ((big == NULL && !n) || !*little)
 		return ((char *)big);
 	while (big[lenb])
 	{
+		lenl = 0;
 		while (big[lenb] == little[lenl] && big[lenb] && lenb < n)
 		{
 			lenb++;
@@ -33,33 +30,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 		}
 		if (!little[lenl])
 			return ((char *)&big[lenb - lenl]);
-		lenl = 0;
 		lenb = (lenb - lenl) + 1;
 	}
 	return (NULL);
 }
-
-/* char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
-{
-	size_t	j;
-	size_t	k;
-
-	j = 0;
-	if (!*needle || (NULL == haystack && !len))
-		return ((char *)haystack);
-	while (*(haystack + j) && j < len)
-	{
-		k = 0;
-		while (*(haystack + j + k) == *(needle + k) && (k + j) < len)
-		{
-			if (0 == *(needle + k + 1))
-				return ((char *)haystack + j);
-			++k;
-		}
-		++j;
-	}
-	return (NULL);
-} */
 
 /* #include <stdio.h>
 int main() {

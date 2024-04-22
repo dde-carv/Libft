@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:27 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:53:38 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:56 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,15 +6,13 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 15:07:55 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 15:18:17 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:23 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <string.h>
 
-int	safe_allocation(char **word_p, int position, size_t len)
+static int	safe_allocation(char **word_p, int position, size_t len)
 {
 	int	i;
 
@@ -33,7 +31,7 @@ int	safe_allocation(char **word_p, int position, size_t len)
 	return (0);
 }
 
-int	fill_words(const char *s, char limit, char **word_p)
+static int	fill_words(const char *s, char limit, char **word_p)
 {
 	size_t	len;
 	int		position;
@@ -60,7 +58,7 @@ int	fill_words(const char *s, char limit, char **word_p)
 	return (0);
 }
 
-size_t	count_words(char const *s, char limit)
+static size_t	count_words(char const *s, char limit)
 {
 	size_t	words;
 	int		in_word;

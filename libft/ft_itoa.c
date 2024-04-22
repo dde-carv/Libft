@@ -6,16 +6,13 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:54:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/19 16:57:19 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:51:08 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <string.h>
-#include <stdlib.h>
-
-int	numcount(int n)
+static int	numcount(int n)
 {
 	int	len;
 
@@ -39,64 +36,22 @@ char	*ft_itoa(int n)
 	ptr = malloc(sizeof(char) * (len + 1));
 	if (!ptr)
 		return (NULL);
-	ptr[len] = 0;
-	if (n == -2147483648)
-		return (ptr = "-2147483648");
+	ptr[len] = '\0';
 	if (n == 0)
 		ptr[0] = 48;
 	else if (n < 0)
-	{
 		ptr[0] = '-';
-		n *= -1;
-	}
 	while (n)
 	{
 		--len;
-		ptr[len] = (n % 10) + 48;
+		if (n < 0)
+			ptr[len] = (-(n % 10)) + 48;
+		else
+			ptr[len] = (n % 10) + 48;
 		n = n / 10;
 	}
 	return (ptr);
 }
-
-/* static int	ft_len(int n)
-{
-	size_t	count;
-
-	count = 0;
-	if (n <= 0)
-		++count;
-	while (n)
-	{
-		++count;
-		n /= 10;
-	}
-	return (count);
-}
-
-char	*ft_itoa(int n)
-{
-	char	*ptr;
-	int		len;
-
-	len = ft_len(n);
-	ptr = malloc(len + 1);
-	if (NULL == ptr)
-		return (NULL);
-	ptr[len] = '\0';
-	if (0 == n)
-		ptr[0] = '0';
-	else if (n < 0)
-		ptr[0] = '-';
-	while (n)
-	{
-		if (n < 0)
-			ptr[--len] = (~(n % 10) + 1) + 48;
-		else
-			ptr[--len] = (n % 10) + 48;
-		n /= 10;
-	}
-	return (ptr);
-} */
 
 /* #include <stdio.h>
 

@@ -6,13 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:00:01 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/19 16:09:23 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:57:18 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

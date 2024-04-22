@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:59 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:53:08 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:27 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strchr(const char *str, int c)
 {

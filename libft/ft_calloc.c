@@ -6,13 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 17:36:07 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 15:40:09 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:50:28 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <string.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:52 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:52:48 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:11 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *str, int c, size_t n)
 {

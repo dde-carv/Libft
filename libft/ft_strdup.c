@@ -6,13 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:40:03 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:53:12 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:32 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
 
 char	*ft_strdup(const char *src)
 {

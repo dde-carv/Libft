@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:19 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:53:33 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:56:47 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlen(const char *str)
 {

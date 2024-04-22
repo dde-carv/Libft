@@ -6,12 +6,11 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:18 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:49:14 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:55:52 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
