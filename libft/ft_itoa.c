@@ -6,13 +6,17 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:54:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:51:08 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 14:21:03 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Allocates a string representing the integer received as an argument.
+//Returns the string representing the integer. NULL if the allocation fails.
+
 static int	numcount(int n)
+//Counts the number of digits in the integer received as an argument.
 {
 	int	len;
 
@@ -55,16 +59,15 @@ char	*ft_itoa(int n)
 
 /* #include <stdio.h>
 
-int     main(void)
+int	main(void)
 {
-    int number = (-2147483647 -1);
-    char *result;
+	int number = (-2147483648);
+	char *result;
 
-    result = ft_itoa(number);
-    if (result!= NULL)
-        printf("%s\n", result);
-    else
-        printf("Error: malloc failed\n");
-
-    return (0);
+	result = ft_itoa(number);
+	if (result!= NULL)
+		printf("%s\n", result);
+	else
+		printf("Error: malloc failed\n");
+	return (0);
 } */

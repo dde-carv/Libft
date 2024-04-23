@@ -6,11 +6,13 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 17:42:30 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/18 17:46:25 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:02:44 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Outputs the string ’s’ to the given file descriptor followed by a newline.
 
 void	ft_putendl_fd(char *s, int fd)
 {

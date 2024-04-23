@@ -6,13 +6,13 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:13 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:43 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 10:51:00 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	len;
 	size_t	lensrc;

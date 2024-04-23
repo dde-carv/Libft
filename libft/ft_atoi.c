@@ -6,11 +6,14 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:23:30 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 12:23:33 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 14:16:43 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Convert a string (ascii) to an integer.
+//Returns the converted value or 0 on error.
 
 int	ft_atoi(const char *str)
 {
@@ -41,10 +44,10 @@ int	ft_atoi(const char *str)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    char *str = "   --12a345";
-    int result = ft_atoi(str);
-    printf("Result: %d\n", result);
-    return 0;
+	char *str = "   --12a345";
+	int result = ft_atoi(str);
+	printf("Result: %d\n", result);
+	return 0;
 } */

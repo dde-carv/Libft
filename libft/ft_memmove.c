@@ -6,11 +6,15 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:41 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:06 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 16:51:49 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Copies n bytes from memory area src to memory area dest.
+// The memory areas may overlap.
+//Returns a pointer to dest.
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

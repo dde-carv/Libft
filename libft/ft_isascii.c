@@ -6,11 +6,16 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:53:16 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 13:52:17 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 14:07:46 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Checks whether c is a 7-bit unsigned char
+// value that fits into the ASCII character set.
+//The values returned are nonzero if the character
+// c falls into the tested class, and zero if not.
 
 int	ft_isascii(int c)
 {
@@ -21,10 +26,10 @@ int	ft_isascii(int c)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    int c = 48;
-    int result = ft_isascii(c);
-    printf("Result: %d\n", result);
-    return 0;
-}  */
+	int c = 48;
+	int result = ft_isascii(c);
+	printf("Result: %d\n", result);
+	return 0;
+} */

@@ -6,11 +6,17 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 15:07:55 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:23 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:04:52 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Allocates (with malloc(3)) and returns an array
+// of strings obtained by splitting ’s’ using the
+// character ’c’ as a delimiter.
+//Returns the array of new strings resulting from the split.
+// NULL if the allocation fails.
 
 static int	safe_allocation(char **word_p, int position, size_t len)
 {

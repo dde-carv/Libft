@@ -6,11 +6,15 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:57:06 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 16:22:36 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 15:19:21 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Checks for any printable character including space.
+//The values returned are nonzero if the character
+// c falls into the tested class, and zero if not.
 
 int	ft_isprint(int c)
 {
@@ -21,10 +25,10 @@ int	ft_isprint(int c)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    int c = 4;
-    int result = ft_isprint(c);
-    printf("Result: %d\n", result);
-    return 0;
+	int c = 4;
+	int result = ft_isprint(c);
+	printf("Result: %d\n", result);
+	return 0;
 }  */

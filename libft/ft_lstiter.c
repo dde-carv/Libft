@@ -6,11 +6,13 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 16:01:28 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/19 16:12:39 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 15:58:15 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Iterates the list and applies the function on the content of each node.
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -23,3 +25,24 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		}
 	}
 }
+
+/* #include <stdio.h>
+void	print_content(void *content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int	main(void)
+{
+	t_list	*head;
+	t_list	*node1;
+	t_list	*node2;
+
+	head = NULL;
+	node1 = ft_lstnew("Node 1");
+	node2 = ft_lstnew("Node 2");
+	ft_lstadd_back(&head, node1);
+	ft_lstadd_back(&head, node2);
+	ft_lstiter(head, &print_content);
+	return (0);
+} */

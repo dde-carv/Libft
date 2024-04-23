@@ -6,11 +6,15 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:40:52 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 15:21:43 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 14:09:27 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Checks for a digit (0 - 9).
+//The values returned are nonzero if the character
+// c falls into the tested class, and zero if not.
 
 int	ft_isdigit(int c)
 {
@@ -21,10 +25,10 @@ int	ft_isdigit(int c)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    int c = 48;
-    int result = ft_isdigit(c);
-    printf("Result: %d\n", result);
-    return 0;
-}  */
+	int c = 48;
+	int result = ft_isdigit(c);
+	printf("Result: %d\n", result);
+	return 0;
+} */

@@ -6,11 +6,16 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:11 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:55:47 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 16:42:24 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Scans  the  initial n bytes of the memory area
+// pointed to by s for the first instance of c.
+//Return a pointer to the matching byte or
+// NULL if the character does not occur in the given memory area.
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

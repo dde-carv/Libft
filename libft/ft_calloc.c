@@ -6,11 +6,16 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 17:36:07 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:50:28 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:42:50 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Allocates size bytes and returns a pointer to the allocated  memory.
+// The memory is not initialized.
+// Return a pointer to  the  allocated memory.
+// On error, return NULL.
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -28,25 +33,24 @@ void	*ft_calloc(size_t nmemb, size_t size)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    size_t nmemb = 0;
-    size_t size = 0;
+	char *str;
 
-    int *arr = ft_calloc(nmemb, size);
+	str = ft_calloc(20, sizeof(char));
+	if (str == NULL)
+	{
+		printf("Memory not allocated.\n");
+		return (1);
+	}
+	str[0] = 'H';
+	str[1] = 'e';
+	str[2] = 'l';
+	str[3] = 'l';
+	str[4] = 'o';
+	str[5] = '\0';
+	printf("Allocated string: %s\n", str);
 
-    if (arr != NULL)
-    {
-        printf("Memory allocated successfully using ft_calloc:\n");
-        for (size_t i = 0; i < nmemb; i++)
-            printf("arr[%zu] = %d\n", i, arr[i]);
-
-        free(arr);
-    }
-    else
-    {
-        printf("Memory allocation failed!\n");
-    }
-
-    return 0;
+	free(str);
+	return (0);
 } */

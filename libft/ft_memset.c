@@ -6,11 +6,15 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:52 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:11 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:01:03 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Fills the first n bytes of the memory area pointed to by
+// s with the constant byte c.
+//Returns a pointer to the memory area s.
 
 void	*ft_memset(void *str, int c, size_t n)
 {
