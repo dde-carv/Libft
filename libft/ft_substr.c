@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:00:01 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:57:18 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:38:49 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Allocates and returns a substring from the string ’s’ or NULL if
+// alloaction fails. The substring begins at index ’start’ and is of
+// maximum size ’len’.
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

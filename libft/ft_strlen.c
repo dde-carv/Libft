@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:19 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:47 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:52:19 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Calculates the length of the string pointed to by s.
+//Returns the number of bytes in the string pointed to by s.
 
 size_t	ft_strlen(const char *str)
 {

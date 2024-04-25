@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 14:07:09 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/18 17:15:13 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:24:33 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Applies the function f to each character of the string s
+//Returns The string created from the successive applications of ’f’
+// or NULL if the allocation fails.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -20,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	len = 0;
 	if (!s)
 		return (NULL);
-	str = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	str = malloc(ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
 	while (s[len])

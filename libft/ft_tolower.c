@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 16:41:02 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/17 15:18:45 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:39:37 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Convert lowercase letters to uppercase.
 
 int	ft_tolower(int c)
 {

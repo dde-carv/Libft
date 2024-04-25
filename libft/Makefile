@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+         #
+#    By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 15:04:36 by dde-carv          #+#    #+#              #
-#    Updated: 2024/04/23 11:36:37 by dde-carv         ###   ########.fr        #
+#    Updated: 2024/04/24 15:44:33 by dde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,10 +90,6 @@ fclean: clean
 clean:
 	${RM} -f ${OBJS} ${OBJS_B}
 	@echo "Cleaned .o files."
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 re: fclean all
 

@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:07 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/23 17:13:03 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:52:06 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Appends the NUL-terminated string src to the end of dst.
+// It will append at most size - strlen(dst) - 1 bytes, NUL-termi‐
+// nating the result.
+//Return the total length of the string they tried to create.
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -31,4 +36,14 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (res);
 }
 
+/* #include <stdio.h>
+#include <string.h>
 
+int main() {
+    char dest[20] = "Hello";
+    const char src[] = " World!";
+    size_t size = 15;
+    printf("Destin: %s Total:%zu\n", dest, ft_strlcat(dest, src, size));
+
+    return 0;
+} */

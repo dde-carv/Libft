@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:40:03 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/23 17:07:18 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:51:50 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,15 @@ int main(void)
 {
     const char *source = "Hello, World!";
     char *duplicate = ft_strdup(source);
-
     if (duplicate != NULL)
     {
         printf("Original string: %s\n", source);
         printf("Duplicated string: %s\n", duplicate);
-
         free(duplicate);
     }
     else
     {
         printf("Memory allocation failed!\n");
     }
-
     return 0;
 } */

@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:35 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:57:03 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:28:52 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Locates the first occurrence of the null-terminated string little in the
+// string big, where not more than len characters are searched.
+//If little is an empty string, big is returned; if little occurs nowhere
+// in big,NULL is returned; otherwise a pointer to the first character of
+// the first occurrence of little is returned.
 
 char	*ft_strnstr(const char *big, const char *little, size_t n)
 {

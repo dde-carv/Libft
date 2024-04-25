@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:13 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/23 10:51:00 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:52:12 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//copies up to size - 1 characters from the NUL-terminated string
+// src to dst, NUL-terminating the result.
+//Return the total length of the string they tried to create.
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

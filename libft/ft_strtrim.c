@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 11:59:11 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 16:34:20 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:36:57 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Allocates and returns a copy of ’s1’ with the characters specified
+// in ’set’ removed from the beginning and the end of the string or
+// NULL if allocation fails.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

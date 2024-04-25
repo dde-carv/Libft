@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:27 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/22 15:56:56 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/04/24 15:26:06 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Compares the first nbytes of the strings s1 and s2.
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
