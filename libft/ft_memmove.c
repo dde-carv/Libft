@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:41 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/24 13:51:07 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/07 14:34:57 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	typedef unsigned char a;
+	typedef unsigned char uc;
 	if (src == NULL && dest == NULL)
 		return (dest);
 	if (dest > src)
@@ -26,7 +26,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (n > 0)
 		{
 			n--;
-			*((a *)dest + n) = *((a *)src + n);
+			*((uc *)dest + n) = *((uc *)src + n);
 		}
 	}
 	else

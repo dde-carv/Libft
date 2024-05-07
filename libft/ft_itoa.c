@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dde-carv <dde-carv@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:54:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/04/24 13:49:45 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/07 15:27:32 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_itoa(int n)
 		ptr[0] = '-';
 	while (n)
 	{
-		--len;
+		len--;
 		if (n < 0)
 			ptr[len] = (-(n % 10)) + 48;
 		else
