@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:54:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:27:32 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/08 18:59:08 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,6 @@ int	main(void)
 		printf("%s\n", result);
 	else
 		printf("Error: malloc failed\n");
+	free(result);
 	return (0);
 } */

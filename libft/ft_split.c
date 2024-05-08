@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 15:07:55 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:28:49 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/08 18:53:18 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,12 +113,19 @@ int main(void)
 	char **split = ft_split(str, ' ');
 	if (split)
 	{
-		for (int i = 0; split[i]; i++)
+		int i = 0;
+		while (split[i])
+		{
 			printf("%s\n", split[i]);
+			free(split[i]);
+			split[i++] = NULL;
+		}
+		free(split[i]);
 	}
 	else
 	{
 		printf("Split failed\n");
 	}
+	free(split);
 	return 0;
 } */

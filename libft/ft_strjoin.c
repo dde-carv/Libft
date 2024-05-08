@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:57:32 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:14 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:02:03 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ int main(void)
         printf("The prefix string: %s\n", s1);
 	printf("The suffix string: %s\n", s2);
         printf("New string: %s\n", str);
-
         free(str);
     }
     else
