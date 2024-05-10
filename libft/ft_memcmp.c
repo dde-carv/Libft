@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:18 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 14:34:04 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 15:24:12 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,21 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 /* #include <stdio.h>
 int main(void)
 {
-    char str1[] = "Hello, World!";
-    char str2[] = "Hello, world!";
-    size_t n = 10000000000000;
+	char	*str1;
+	char	*str2;
+	size_t	n;
+	int	result;
 
-    int result = ft_memcmp(str1, str2, n);
+	str1 = "Hello, World!";
+	str2 = "Hello, World!";
+	n = 100;
+	result = ft_memcmp(str1, str2, n);
+	if (result == 0)
+		printf("The strings are equal.\n");
+	else if (result < 0)
+		printf("str1 is less than str2.\n");
+	else
+		printf("str1 is greater than str2.\n");
 
-    if (result == 0)
-        printf("The strings are equal.\n");
-    else if (result < 0)
-        printf("str1 is less than str2.\n");
-    else
-        printf("str1 is greater than str2.\n");
-
-    return 0;
+	return 0;
 } */

@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:11 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 14:33:33 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 14:15:54 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,20 @@ void	*ft_memchr(const void *str, int c, size_t n)
 }
 
 /* #include <stdio.h>
-int main(void)
+int	main(void)
 {
-    char str[] = "/0";
-    int c = 'p';
-    size_t n = strlen(str);
+	char	*str;
+	int	c;
+	size_t	n;
+	void	*result;
 
-    void *result = ft_memchr(str, c, n);
-
-    if (result != NULL)
-        printf("Character '%c' found at index %ld\n", c, (char *)result - str);
-    else
-        printf("Character '%c' not found\n", c);
-
-    return 0;
+	str = "Hello World!";
+	c = 'o';
+	n = strlen(str);
+	result = ft_memchr(str, c, n);
+	if (result != NULL)
+		printf("Character '%c' found at index %ld.\n", c, (char *)result - str);
+	else
+		printf("Character '%c' not found.\n", c);
+	return (0);
 } */

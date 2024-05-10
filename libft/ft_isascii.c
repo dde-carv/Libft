@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:53:16 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:27:03 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 10:58:18 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (1);
+		return (42);
 	else
 		return (0);
 }
@@ -28,8 +28,11 @@ int	ft_isascii(int c)
 /* #include <stdio.h>
 int	main(void)
 {
-	int c = 48;
-	int result = ft_isascii(c);
+	int c;
+	int result;
+
+	c = 48;
+	result = ft_isascii(c);
 	printf("Result: %d\n", result);
 	return 0;
 } */

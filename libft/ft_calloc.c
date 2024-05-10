@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 17:36:07 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 18:55:12 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/10 16:48:26 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	len = nmemb * size;
 	if (size && (len / size) != nmemb)
 		return (NULL);
-	arr = malloc(len);
+	arr = (void *)malloc(len);
 	if (!arr)
 		return (NULL);
 	ft_bzero(arr, len);
@@ -50,7 +50,6 @@ int	main(void)
 	str[4] = 'o';
 	str[5] = '\0';
 	printf("Allocated string: %s\n", str);
-
 	free(str);
 	return (0);
 } */

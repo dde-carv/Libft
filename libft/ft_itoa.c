@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:54:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 18:59:08 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 11:57:14 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,12 @@ char	*ft_itoa(int n)
 }
 
 /* #include <stdio.h>
-
 int	main(void)
 {
-	int number = (-2147483648);
+	int number;
 	char *result;
 
+	number = (-2147483648);
 	result = ft_itoa(number);
 	if (result!= NULL)
 		printf("%s\n", result);

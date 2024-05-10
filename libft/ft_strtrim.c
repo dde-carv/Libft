@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 11:59:11 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 19:02:56 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:37:56 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,26 +42,22 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 /* #include <stdio.h>
-
 int main(void)
 {
-    // Test cases
-    const char *s1 = "    Hello, World!    ";
-    const char *set = "H";
+	const char	*s1;
+	const char	*set;
+	char		*trimmed_str;
 
-    char *trimmed_str = ft_strtrim(s1, set);
-
-    if (trimmed_str)
-    {
-        printf("Original string: \"%s\"\n", s1);
-        printf("Trimmed string: \"%s\"\n", trimmed_str);
-
-        free(trimmed_str);
-    }
-    else
-    {
-        printf("Error: Memory allocation failed.\n");
-    }
-
-    return 0;
+	s1 = "    Hello, World!    ";
+	set = "H";
+	trimmed_str = ft_strtrim(s1, set);
+	if (trimmed_str)
+	{
+		printf("Original string: \"%s\"\n", s1);
+		printf("Trimmed string: \"%s\"\n", trimmed_str);
+		free(trimmed_str);
+	}
+	else
+		printf("Memory allocation failed.\n");
+	return 0;
 } */

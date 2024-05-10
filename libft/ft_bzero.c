@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:47:34 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:26:42 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 10:46:05 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ void	ft_bzero(void *s, size_t n)
 /* #include <stdio.h>
 int	main(void)
 {
-	char str[50] = "Hello, World!";
+	char	*str;
 
+	str = "Hello, World!";
 	printf("Before ft_bzero: %s\n", str);
 	ft_bzero(str, 5);
 	printf("After ft_bzero: %s\n", str);

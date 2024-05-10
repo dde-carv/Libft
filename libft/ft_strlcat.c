@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:07 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:20 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:14:27 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,12 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 }
 
 /* #include <stdio.h>
-#include <string.h>
-
 int main() {
-    char dest[20] = "Hello";
-    const char src[] = " World!";
-    size_t size = 15;
-    printf("Destin: %s Total:%zu\n", dest, ft_strlcat(dest, src, size));
+	char	dest[20] = "Hello";
+	const	char src[] = " World!";
+	size_t	size;
 
-    return 0;
+	size = 15;
+	printf("Destin: %s Total:%zu\n", dest, ft_strlcat(dest, src, size));
+	return 0;
 } */

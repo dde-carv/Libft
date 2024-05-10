@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 15:07:55 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 18:53:18 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:04:39 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,8 +109,11 @@ char	**ft_split(char const *s, char c)
 /* #include <stdio.h>
 int main(void)
 {
-	char *str = "Hello I am here";
-	char **split = ft_split(str, ' ');
+	char	*str;
+	char	**split;
+
+	str = "Hello World, I am here !";
+	split = ft_split(str, ' ');
 	if (split)
 	{
 		int i = 0;

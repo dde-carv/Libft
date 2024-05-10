@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:13 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:25 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:16:14 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 /* #include <stdio.h>
 int main(void)
 {
-    char src[] = "Hello, World!";
-    char dest[0]; // Destination buffer
+	char	src[] = "Hello, World!";
+	char	dest[0];
+	size_t	result;
 
-    size_t result = ft_strlcpy(dest, src, sizeof(dest));
-
-    printf("Copied string: %s\n", dest);
-    printf("Length of copied string: %zu\n", result);
-
-    return 0;
+	result = ft_strlcpy(dest, src, sizeof(dest));
+	printf("Length of copied string: %zu\n", result);
+	return 0;
 } */

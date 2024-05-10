@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:35 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:44 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:25:50 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,19 +43,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 
 /* #include <stdio.h>
 int main() {
-    char haystack[] = "Hello, world! How are you?";
-    char needle[0];
-    char *result;
+	char haystack[] = "Hello, world! How are you?";
+	char needle[0];
+	char *result;
 
-    // Search for the substring "world" in the haystack string
-    result = ft_strnstr(haystack, needle, 0);
-
-    // Check if the substring was found
-    if (result != NULL) {
-        printf("Substring found at position: %ld\n", result - haystack);
-    } else {
-        printf("Substring not found.\n");
-    }
-
-    return 0;
+	result = ft_strnstr(haystack, needle, 0);
+	if (result != NULL)
+		printf("Substring found at position: %ld\n", result - haystack);
+	else
+		printf("Substring not found.\n");
+	return 0;
 } */

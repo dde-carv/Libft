@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:41 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 14:34:57 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 15:23:47 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 /* #include <stdio.h>
 int main(void)
 {
-    char src[] = NULL;
-    char dest[] = "Como estas colega.";
-    size_t n = strlen(src);
+	char	src[] = NULL;
+	char	dest[] = "Como estas colega.";
+	size_t	n;
 
-    ft_memmove(dest, src, n);
+	n = strlen(src);
+	ft_memmove(dest, src, n);
+	printf("Source string: %s\n", src);
+	printf("Moved string: %s\n", dest);
 
-    printf("Source string: %s\n", src);
-    printf("Moved string: %s\n", dest);
-
-    return 0;
+	return 0;
 } */

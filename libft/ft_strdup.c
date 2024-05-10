@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:40:03 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 19:01:37 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:09:54 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,18 @@ char	*ft_strdup(const char *src)
 /* #include <stdio.h>
 int main(void)
 {
-    const char *source = "Hello, World!";
-    char *duplicate = ft_strdup(source);
-    if (duplicate != NULL)
-    {
-        printf("Original string: %s\n", source);
-        printf("Duplicated string: %s\n", duplicate);
-        free(duplicate);
-    }
-    else
-    {
-        printf("Memory allocation failed!\n");
-    }
-    return 0;
+	const char	*source;
+	char		*duplicate;
+
+	source = "Hello, World!";
+	duplicate = ft_strdup(source);
+	if (duplicate != NULL)
+	{
+		printf("Original string: %s\n", source);
+		printf("Duplicated string: %s\n", duplicate);
+		free(duplicate);
+	}
+	else
+		printf("Memory allocation failed!\n");
+	return 0;
 } */

@@ -6,7 +6,7 @@
 #    By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 15:04:36 by dde-carv          #+#    #+#              #
-#    Updated: 2024/05/07 16:03:30 by dde-carv         ###   ########.fr        #
+#    Updated: 2024/05/10 17:46:26 by dde-carv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,12 +57,12 @@ SRC_B	=	ft_lstnew.c \
 		ft_lstiter.c \
 		ft_lstmap.c
 
-CC	=	@cc
+CC	=	cc
 CFLAGS	=	-Wall -Werror -Wextra
 OBJS	=	${SRCS:.c=.o}
 OBJS_B	=	${SRC_B:.c=.o}
-RM	=	@rm -f
-LIBC	=	@ar -rcs
+RM	=	rm -f
+LIBC	=	ar -rcs
 INCS	=	.
 
 ${NAME}: ${OBJS}
@@ -72,7 +72,6 @@ ${NAME}: ${OBJS}
 all: ${NAME}
 
 bonus: ${NAME} ${OBJS_B}
-	${LIBC} ${NAME} ${OBJS}
 
 fclean: clean
 	${RM} ${NAME}

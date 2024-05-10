@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 13:47:23 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:26:35 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 10:41:39 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,11 @@ int	ft_atoi(const char *str)
 /* #include <stdio.h>
 int	main(void)
 {
-	char *str = "   -12a345";
-	int result = ft_atoi(str);
+	char	*str;
+	int	result;
+
+	str = "   -12a345";
+	result = ft_atoi(str);
 	printf("Result: %d\n", result);
 	return 0;
 } */

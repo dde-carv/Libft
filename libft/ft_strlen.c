@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:19 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:31 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:18:35 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ size_t	ft_strlen(const char *str)
 /* #include <stdio.h>
 int main(void)
 {
-	char str[] = "Hello, World!";
+	char	str[] = "Hello, World!";
+	size_t result;
 
-	size_t result = ft_strlen(str);
+	result = ft_strlen(str);
 	printf("Length of the string: %zu\n", result);
-
 	return (0);
 } */

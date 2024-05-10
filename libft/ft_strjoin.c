@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:57:32 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 19:02:03 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:35:34 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,21 +39,21 @@ char	*ft_strjoin(char const *s1, char const *s2)
 /* #include <stdio.h>
 int main(void)
 {
-	const char *s1 = "Hello, ";
-	const char *s2 = "World!";
-	char *str = ft_strjoin(s1, s2);
+	const char	*s1;
+	const char	*s2;
+	char		*str;
 
-    if (str != NULL)
-    {
-        printf("The prefix string: %s\n", s1);
-	printf("The suffix string: %s\n", s2);
-        printf("New string: %s\n", str);
-        free(str);
-    }
-    else
-    {
-        printf("Memory allocation failed!\n");
-    }
-
-    return 0;
+	s1 = "Hello, ";
+	s2 = "World!";
+	str = ft_strjoin(s1, s2);
+	if (str != NULL)
+	{
+		printf("The prefix string: %s\n", s1);
+		printf("The suffix string: %s\n", s2);
+		printf("New string: %s\n", str);
+		free(str);
+	}
+	else
+		printf("Memory allocation failed!\n");
+	return 0;
 } */

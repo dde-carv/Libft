@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 16:16:55 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:28:03 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/10 14:52:32 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,23 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 }
 
 /* #include <stdio.h>
-void	*double_content(void *content);
-void	del_content(void *content);
+void	*double_content(void *content)
+{
+	char	*new_content;
+
+	new_content = malloc(strlen((char *)content) * 2 + 1);
+	if (!new_content)
+		return (NULL);
+	strcpy(new_content, content);
+	strcat(new_content, content);
+	return (new_content);
+}
+
+void	del_content(void *content)
+{
+	free(content);
+}
+
 int	main(void)
 {
 	t_list	*head;
@@ -66,21 +81,4 @@ int	main(void)
 	ft_lstclear(&new_lst, &del_content);
 
 	return (0);
-}
-
-void	*double_content(void *content)
-{
-	char	*new_content;
-
-	new_content = malloc(strlen((char *)content) * 2 + 1);
-	if (!new_content)
-		return (NULL);
-	strcpy(new_content, content);
-	strcat(new_content, content);
-	return (new_content);
-}
-
-void	del_content(void *content)
-{
-	free(content);
 } */

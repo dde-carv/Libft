@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:52 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 14:18:41 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 16:14:54 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ void	*ft_memset(void *str, int c, size_t n)
 /* #include <stdio.h>
 int main(void)
 {
-    char buffer[] = "Hello World my name is.";
-    size_t n = 5; // Number of bytes to set
-    int value = ' '; // ASCII value of character to set
+	char	buffer[] = "Hello World my name is Jeff.";
+	size_t	n;
+	int	value;
 
-    memset(buffer, value, n);
-
-    printf("Buffer after memset: \"%s\"\n", buffer);
-
-    return 0;
+	n = 5;
+	value = '$';
+	memset(buffer, value, n);
+	printf("Buffer after memset: %s\n", buffer);
+	return 0;
 } */

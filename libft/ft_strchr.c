@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:24:59 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:28:57 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/10 10:00:45 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	while (*str && c != *str)
+	while (*str && (char)c != *str)
 		str++;
-	if (c == *str)
+	if ((char)c == *str)
 		return ((char *)str);
 	return (NULL);
 }
@@ -26,15 +26,15 @@ char	*ft_strchr(const char *str, int c)
 /* #include <stdio.h>
 int main(void)
 {
-    char str[] = "Hello, World!";
-    int c = 'o'; // Character to search for
+	char	str[] = "Hello, World!";
+	int	c;
+	char	*result;
 
-    char *result = ft_strchr(str, c);
-
-    if (result != NULL)
-        printf("Character '%c' found at position: %ld\n", c, result - str);
-    else
-        printf("Character '%c' not found.\n", c);
-
-    return 0;
+	c = 'l';
+	result = ft_strchr(str, c);
+	if (result != NULL)
+		printf("Character '%c' found at position: %ld\n", c, result - str);
+	else
+		printf("Character '%c' not found.\n", c);
+	return 0;
 } */

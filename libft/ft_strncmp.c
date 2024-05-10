@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:25:27 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:39 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:23:36 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,20 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /* #include <stdio.h>
 int main(void)
 {
-    const char *s1 = "";
-    const char *s2 = "";
-    size_t n = 5; // number of characters to compare
+	const char	*s1;
+	const char	*s2;
+	size_t		n;
+	int		result;
 
-    int result = ft_strncmp(s1, s2, n);
-
-    if (result == 0)
-        printf("Strings are equal.\n");
-    else if (result < 0)
-        printf("String s1 is less than string s2.\n");
-    else
-        printf("String s1 is greater than string s2.\n");
-
-    return 0;
+	s1 = "";
+	s2 = "";
+	n = 5;
+	result = ft_strncmp(s1, s2, n);
+	if (result == 0)
+		printf("Strings are equal.\n");
+	else if (result < 0)
+		printf("String s1 is less than string s2.\n");
+	else
+		printf("String s1 is greater than string s2.\n");
+	return 0;
 } */

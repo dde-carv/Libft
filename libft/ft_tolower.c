@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 16:41:02 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:30:06 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:40:38 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,11 @@ int	ft_tolower(int c)
 /* #include <stdio.h>
 int main(void)
 {
-    int c = 65;
-    int result = ft_tolower(c);
-    printf("Result: %d\n", result);
-    return 0;
+	int c;
+	int result;
+
+	c = 65;
+	result = ft_tolower(c);
+	printf("Result: %d\n", result);
+	return 0;
 } */

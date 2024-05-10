@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 10:00:01 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/08 19:11:41 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/10 10:29:17 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	i;
+	size_t	lent;
 
 	i = 0;
 	if (!s)
 		return (NULL);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	lent = ft_strlen(s + start);
+	if (lent < len)
+		len = lent;
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
-	if (start >= ft_strlen(s))
-		return (ft_strdup(""));
 	while (i < len && s[start + i])
 	{
 		sub[i] = s[start + i];
@@ -41,22 +45,26 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /* #include <stdio.h>
 int main(void)
 {
-    const char *str = "Hello, World!";
-    unsigned int start = 15;
-    size_t length = 10;
+	const char	*str;
+	unsigned int	start;
+	size_t		length;
+	char		*substring;
 
-    char *substring = ft_substr(str, start, length);
-    if (substring)
-    {
-        printf("Original string: %s\n", str);
-        printf("Substring from index %u with length %zu: %s\n",
-	 start, length, substring);
-        free(substring); // Free dynamically allocated memory
-    }
-    else
-    {
-        printf("Memory allocation failed!\n");
-    }
-
-    return 0;
+	str = "Hello, World!";
+	start = 15;
+	length = 10;
+	substring = ft_substr(str, start, length);
+	if (substring)
+	{
+		printf("Original string: %s\n", str);
+		printf("Substring from index %u with length %zu: %s\n",
+		 start, length, substring);
+		free(substring);
+	}
+	else
+	{
+		printf("Memory allocation failed!\n");
+		free(substring);
+	}
+	return 0;
 } */

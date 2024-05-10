@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 13:31:04 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 14:23:59 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 12:08:15 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,28 +39,4 @@ int	main(void)
 	else
 		printf("Node is freed\n");
 	return (0);
-} */
-
-/* #include <stdio.h>
-void	del(void *content)
-{
-	free(content); // Example: assuming content is dynamically allocated memory
-}
-
-int main(void)
-{
-	// Example usage of ft_lstdelone
-	t_list *node = malloc(sizeof(t_list));
-	node->content = malloc(10); // Allocate some memory for content
-	// Assume content is initialized or used in some way before deletion
-
-	ft_lstdelone(node, del); // Delete the node
-
-	// Verify deletion
-	if (node == NULL)
-		printf("Node deleted successfully\n");
-	else
-		printf("Error: Node was not deleted\n");
-
-	return 0;
 } */

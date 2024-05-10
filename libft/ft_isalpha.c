@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:23:50 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:26:57 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/09 10:50:26 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ int	main(void)
 {
 	int c = 'a';
 	int result = ft_isalpha(c);
+
+	c = 'a';
+	result = ft_isalpha(c);
 	printf("Result: %d\n", result);
 	return 0;
 } */

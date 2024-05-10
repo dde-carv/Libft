@@ -6,7 +6,7 @@
 /*   By: dde-carv <dde-carv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 19:23:14 by dde-carv          #+#    #+#             */
-/*   Updated: 2024/05/07 15:29:49 by dde-carv         ###   ########.fr       */
+/*   Updated: 2024/05/10 10:01:57 by dde-carv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
-		if (s[len] == c)
+		if (s[len] == (char)c)
 			return ((char *)(s + len));
 		len--;
 	}
@@ -31,16 +31,17 @@ char	*ft_strrchr(const char *s, int c)
 /* #include <stdio.h>
 int main(void)
 {
-    const char *str = "Hello, World!";
-    int c = 'a';
+	const char	*str;
+	int		c;
+	char		*result;
 
-    char *result = ft_strrchr(str, c);
-
-    if (result != NULL)
-        printf("Last occurrence of '%c' in '%s' is at
-	index %ld\n", c, str, result - str);
-    else
-        printf("'%c' not found in '%s'\n", c, str);
-
-    return 0;
+	str = "Hello, World!";
+	c = 'o';
+	result = ft_strrchr(str, c);
+	if (result != NULL)
+		printf("Last occurrence of '%c' in '%s'
+		is at index %ld\n", c, str, result - str);
+	else
+		printf("'%c' not found in '%s'\n", c, str);
+	return 0;
 } */
