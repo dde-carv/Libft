@@ -35,14 +35,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	res = lend + lens;
 	return (res);
 }
-
-/* #include <stdio.h>
-int main() {
-	char	dest[20] = "Hello";
-	const	char src[] = " World!";
-	size_t	size;
-
-	size = 15;
-	printf("Destin: %s Total:%zu\n", dest, ft_strlcat(dest, src, size));
-	return 0;
-} */
