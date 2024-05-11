@@ -23,15 +23,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	int c;
-	int result;
-
-	c = 48;
-	result = ft_isprint(c);
-	printf("Result: %d\n", result);
-	return 0;
-} */
