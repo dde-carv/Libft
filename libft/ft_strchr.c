@@ -22,19 +22,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)str);
 	return (NULL);
 }
-
-/* #include <stdio.h>
-int main(void)
-{
-	char	str[] = "Hello, World!";
-	int	c;
-	char	*result;
-
-	c = 'l';
-	result = ft_strchr(str, c);
-	if (result != NULL)
-		printf("Character '%c' found at position: %ld\n", c, result - str);
-	else
-		printf("Character '%c' not found.\n", c);
-	return 0;
-} */
