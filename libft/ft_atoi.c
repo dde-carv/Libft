@@ -42,15 +42,3 @@ int	ft_atoi(const char *str)
 	nb = nb * neg;
 	return (nb);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	char	*str;
-	int	result;
-
-	str = "   -12a345";
-	result = ft_atoi(str);
-	printf("Result: %d\n", result);
-	return 0;
-} */
