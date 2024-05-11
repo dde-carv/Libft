@@ -25,27 +25,3 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	t_list	*head;
-	t_list	*node1;
-	t_list	*node2;
-	t_list	*node3;
-
-	head = NULL;
-	node1 = ft_lstnew("Node 1");
-	node2 = ft_lstnew("Node 2");
-	node3 = ft_lstnew("Node 3");
-	ft_lstadd_back(&head, node1);
-	ft_lstadd_back(&head, node2);
-	ft_lstadd_back(&head, node3);
-	while (head)
-	{
-		printf("%s\n", (char *)head->content);
-		head = head->next;
-	}
-	return (0);
-} */
