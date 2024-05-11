@@ -31,22 +31,3 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	char	*str;
-	int	c;
-	size_t	n;
-	void	*result;
-
-	str = "Hello World!";
-	c = 'o';
-	n = strlen(str);
-	result = ft_memchr(str, c, n);
-	if (result != NULL)
-		printf("Character '%c' found at index %ld.\n", c, (char *)result - str);
-	else
-		printf("Character '%c' not found.\n", c);
-	return (0);
-} */
