@@ -27,16 +27,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		len++;
 	}
 }
-
-/* #include <stdio.h>
-void	print_index_and_char(unsigned int index, char *c)
-{
-	printf("Index: %d, Char: %c\n", index, *c);
-}
-int	main(void)
-{
-	char	str[] = "Hello, World!";
-
-	ft_striteri(str, &print_index_and_char);
-	return (0);
-} */
