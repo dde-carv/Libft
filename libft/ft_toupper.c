@@ -21,15 +21,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/* #include <stdio.h>
-int main(void)
-{
-	int	c;
-	int	result;
-
-	c = 122;
-	result = ft_toupper(c);
-	printf("Result: %d\n", result);
-	return 0;
-} */
