@@ -105,30 +105,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (word_p);
 }
-
-/* #include <stdio.h>
-int main(void)
-{
-	char	*str;
-	char	**split;
-
-	str = "Hello World, I am here !";
-	split = ft_split(str, ' ');
-	if (split)
-	{
-		int i = 0;
-		while (split[i])
-		{
-			printf("%s\n", split[i]);
-			free(split[i]);
-			split[i++] = NULL;
-		}
-		free(split[i]);
-	}
-	else
-	{
-		printf("Split failed\n");
-	}
-	free(split);
-	return 0;
-} */
