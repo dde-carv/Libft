@@ -40,17 +40,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h>
-int main() {
-	char haystack[] = "Hello, world! How are you?";
-	char needle[0];
-	char *result;
-
-	result = ft_strnstr(haystack, needle, 0);
-	if (result != NULL)
-		printf("Substring found at position: %ld\n", result - haystack);
-	else
-		printf("Substring not found.\n");
-	return 0;
-} */
