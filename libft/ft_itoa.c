@@ -56,19 +56,3 @@ char	*ft_itoa(int n)
 	}
 	return (ptr);
 }
-
-/* #include <stdio.h>
-int	main(void)
-{
-	int number;
-	char *result;
-
-	number = (-2147483648);
-	result = ft_itoa(number);
-	if (result!= NULL)
-		printf("%s\n", result);
-	else
-		printf("Error: malloc failed\n");
-	free(result);
-	return (0);
-} */
