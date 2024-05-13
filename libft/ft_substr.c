@@ -41,3 +41,30 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	const char	*str;
+	unsigned int	start;
+	size_t		length;
+	char		*substring;
+
+	str = "Hello, World!";
+	start = 15;
+	length = 10;
+	substring = ft_substr(str, start, length);
+	if (substring)
+	{
+		printf("Original string: %s\n", str);
+		printf("Substring from index %u with length %zu: %s\n",
+		 start, length, substring);
+		free(substring);
+	}
+	else
+	{
+		printf("Memory allocation failed!\n");
+		free(substring);
+	}
+	return 0;
+} */

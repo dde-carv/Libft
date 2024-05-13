@@ -27,3 +27,18 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (len);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	t_list	*head;
+	int	size;
+
+	head = NULL;
+	head = ft_lstnew("Node 1");
+	ft_lstadd_back(&head, ft_lstnew("Node 2"));
+	ft_lstadd_back(&head, ft_lstnew("Node 3"));
+	size = ft_lstsize(head);
+	printf("Size of the list is: %d\n", size);
+	return (0);
+} */

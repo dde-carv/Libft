@@ -31,3 +31,25 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(arr, len);
 	return (arr);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	char *str;
+
+	str = ft_calloc(20, sizeof(char));
+	if (str == NULL)
+	{
+		printf("Memory not allocated.\n");
+		return (1);
+	}
+	str[0] = 'H';
+	str[1] = 'e';
+	str[2] = 'l';
+	str[3] = 'l';
+	str[4] = 'o';
+	str[5] = '\0';
+	printf("Allocated string: %s\n", str);
+	free(str);
+	return (0);
+} */

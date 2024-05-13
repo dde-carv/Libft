@@ -35,3 +35,25 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(str, (char *)s2, totallen);
 	return (str);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	const char	*s1;
+	const char	*s2;
+	char		*str;
+
+	s1 = "Hello, ";
+	s2 = "World!";
+	str = ft_strjoin(s1, s2);
+	if (str != NULL)
+	{
+		printf("The prefix string: %s\n", s1);
+		printf("The suffix string: %s\n", s2);
+		printf("New string: %s\n", str);
+		free(str);
+	}
+	else
+		printf("Memory allocation failed!\n");
+	return 0;
+} */

@@ -31,3 +31,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	char	src[] = "Hello, World!";
+	char	dest[] = "Hoello my fello students.";
+	size_t	n;
+
+	n = ft_strlen(src);
+	ft_memcpy(dest, src, n + 1);
+	printf("Source string: %s\n", src);
+	printf("Copied string: %s\n", dest);
+	return (0);
+} */

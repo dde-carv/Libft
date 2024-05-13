@@ -29,3 +29,24 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((uc)s1[len] - (uc)s2[len]);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	const char	*s1;
+	const char	*s2;
+	size_t		n;
+	int		result;
+
+	s1 = "";
+	s2 = "";
+	n = 5;
+	result = ft_strncmp(s1, s2, n);
+	if (result == 0)
+		printf("Strings are equal.\n");
+	else if (result < 0)
+		printf("String s1 is less than string s2.\n");
+	else
+		printf("String s1 is greater than string s2.\n");
+	return 0;
+} */

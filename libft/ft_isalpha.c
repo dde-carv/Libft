@@ -23,3 +23,15 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	int c = 'a';
+	int result = ft_isalpha(c);
+
+	c = 'a';
+	result = ft_isalpha(c);
+	printf("Result: %d\n", result);
+	return 0;
+} */

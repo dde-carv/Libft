@@ -22,3 +22,21 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 		free(lst);
 	}
 }
+
+/* #include <stdio.h>
+void	del_content(void *content)
+{
+	free(content);
+}
+int	main(void)
+{
+	t_list	*node;
+
+	node = ft_lstnew("Node");
+	ft_lstdelone(node, &del_content);
+	if (node)
+		printf("Node is not freed\n");
+	else
+		printf("Node is freed\n");
+	return (0);
+} */

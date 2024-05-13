@@ -27,3 +27,21 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	const char	*str;
+	int		c;
+	char		*result;
+
+	str = "Hello, World!";
+	c = 'o';
+	result = ft_strrchr(str, c);
+	if (result != NULL)
+		printf("Last occurrence of '%c' in '%s'
+		is at index %ld\n", c, str, result - str);
+	else
+		printf("'%c' not found in '%s'\n", c, str);
+	return 0;
+} */

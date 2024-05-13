@@ -31,3 +31,25 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return (0);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	char	*str1;
+	char	*str2;
+	size_t	n;
+	int	result;
+
+	str1 = "Hello, World!";
+	str2 = "Hello, World!";
+	n = 100;
+	result = ft_memcmp(str1, str2, n);
+	if (result == 0)
+		printf("The strings are equal.\n");
+	else if (result < 0)
+		printf("str1 is less than str2.\n");
+	else
+		printf("str1 is greater than str2.\n");
+
+	return 0;
+} */

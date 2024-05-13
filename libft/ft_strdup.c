@@ -26,3 +26,22 @@ char	*ft_strdup(const char *src)
 	ft_strlcpy(dest, (char *)src, lensrc);
 	return (dest);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	const char	*source;
+	char		*duplicate;
+
+	source = "Hello, World!";
+	duplicate = ft_strdup(source);
+	if (duplicate != NULL)
+	{
+		printf("Original string: %s\n", source);
+		printf("Duplicated string: %s\n", duplicate);
+		free(duplicate);
+	}
+	else
+		printf("Memory allocation failed!\n");
+	return 0;
+} */

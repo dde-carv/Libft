@@ -24,3 +24,15 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	int c;
+	int result;
+
+	c = 48;
+	result = ft_isascii(c);
+	printf("Result: %d\n", result);
+	return 0;
+} */

@@ -35,3 +35,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	char	src[] = NULL;
+	char	dest[] = "Como estas colega.";
+	size_t	n;
+
+	n = strlen(src);
+	ft_memmove(dest, src, n);
+	printf("Source string: %s\n", src);
+	printf("Moved string: %s\n", dest);
+
+	return 0;
+} */

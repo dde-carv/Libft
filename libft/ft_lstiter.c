@@ -25,3 +25,24 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		}
 	}
 }
+
+/* #include <stdio.h>
+void	print_content(void *content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int	main(void)
+{
+	t_list	*head;
+	t_list	*node1;
+	t_list	*node2;
+
+	head = NULL;
+	node1 = ft_lstnew("Node 1");
+	node2 = ft_lstnew("Node 2");
+	ft_lstadd_back(&head, node1);
+	ft_lstadd_back(&head, node2);
+	ft_lstiter(head, &print_content);
+	return (0);
+} */

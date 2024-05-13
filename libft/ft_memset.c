@@ -28,3 +28,17 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	char	buffer[] = "Hello World my name is Jeff.";
+	size_t	n;
+	int	value;
+
+	n = 5;
+	value = '$';
+	memset(buffer, value, n);
+	printf("Buffer after memset: %s\n", buffer);
+	return 0;
+} */
