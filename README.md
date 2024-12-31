@@ -1,7 +1,3 @@
-Here is a draft README for your repository:
-
----
-
 # Libft
 
 Libft is the first project from the 42 Common Core curriculum. The objective of this project is to reproduce the functionality of various standard C library functions. Through this project, students learn the basics and fundamentals of programming in C. Additionally, the bonus part of this project covers linked lists and how they work.
